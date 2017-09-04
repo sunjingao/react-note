@@ -5,7 +5,10 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore} from "redux"
 import {Provider} from "react-redux"
 import reducers from "./reducers/reducer"
+import "jquery/dist/jquery"
+
 import "./css/css.css"
+import "bootstrap/dist/css/bootstrap.css"
 
 let store =createStore(reducers)
 

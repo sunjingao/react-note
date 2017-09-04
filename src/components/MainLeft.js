@@ -8,15 +8,19 @@ class MainLeftComponents extends React.Component {
 
     render() {
         return (
+
             <div className="mainLeft">
-                <ul>
+                <ul className="list-group ">
                     {
                         this.state.note.map(x=>{
-                            return <li onClick={()=>{this.showClick(x.id)}}>{x.title}</li>
+                            return <li className="list-group-item" onClick={()=>{this.showClick(x.id)}}>{x.title}</li>
                         })
                     }
                 </ul>
             </div>
+
+
+
         )
     }
 }

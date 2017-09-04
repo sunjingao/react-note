@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     },
     onSaveClickItem: (title,content) => {
         if( !( title.trim() && content.trim() ) ){
-            alert("请输入数据");
+            alert("请输入标题或内容");
             return false;
         }
         dispatch(saveAdd(title,content))
